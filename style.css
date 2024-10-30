@@ -1,0 +1,53 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Footer */
+h1 {
+    text-align: center;
+    color: #1a73e8;
+}
+
+h2 {
+    color: #005b96;
+}
+
+#sponsors-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#sponsors-section img {
+    width: 150px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+/* Links */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #777;
+    font-size: 0.9em;
+}

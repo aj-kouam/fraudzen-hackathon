@@ -4,94 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FraudZen Hackathon</title>
-    <link rel="icon" href="media/fraudzen-icon.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans">
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-            <a href="https://www.tu-berlin.de/" target="_blank">
-                <img src="media/TU-Berlin-Logo.svg" alt="TU Berlin Logo" class="h-12">
-            </a>
-            <a href="https://www.mlsec.org/" target="_blank">
-                <img src="media/mlsec-logo.jpg" alt="MLSec Logo" class="h-12">
-            </a>
-            <a href="index.html" target="">
-                <img src="media/fraudzen-icon.png" alt="FraudZen Logo" class="h-12">
-            </a>
+
+    <!-- Hero Section -->
+    <header class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('media/hero-background.jpg');">
+        <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">FraudZen Hackathon</h1>
+            <p class="text-xl mb-6">Advancing Mobile Network Security, Privacy, and Fraud Detection</p>
+            <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Learn More</a>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-8 flex flex-col items-center relative">
-        <h1 class="text-3xl sm:text-4xl lg:text-4xl font-bold mb-6 text-center">FraudZen Hackathon</h1>
-        
-        <p class="text-xl mb-8 text-center">Join us for an exciting hackathon dedicated to advancing security, privacy, and fraud detection in mobile networks! </p>
-        
-        <div class="bg-white shadow-md rounded p-6 mb-8 w-full max-w-3xl">
-            <h2 class="text-2xl font-bold mb-4 text-center">Hackathon Overview</h2>
-            <p class="mb-4 text-justify">
-                The FraudZen Hackathon invites students to tackle real-world challenges in mobile networks using state-of-the-art tools: 
-                <a href="https://gitlab.inria.fr/simbox-fraud-mitigation/fraudzen" class="text-blue-600 underline">FraudZen</a> 
-                and 
-                <a href="https://gitlab.inria.fr/simbox-fraud-mitigation/legitimate-mobile-datasets-generation/en-wdm" class="text-blue-600 underline">En-WDM</a>.
-                With these tools, participants  will explore and develop innovative approaches in areas like network simulation, privacy protection, and network security strategies.
-            </p>
-            <p class="mb-4 text-justify">
-                The hackathon is organized around four main thematic poles, with awards for the best projects in each category.
-            </p>
-        </div>
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-6 text-center">About the FraudZen Hackathon</h2>
+        <p class="text-lg text-center mb-8">
+            Join us for an innovative hackathon focused on enhancing mobile network security and privacy protection. 
+            Participants will work with advanced tools, <strong>FraudZen</strong> and <strong>En-WDM</strong>, to tackle real-world challenges.
+        </p>
+    </section>
 
-        <div class="bg-white shadow-md rounded p-6 mb-8 w-full max-w-3xl">
-            <h2 class="text-2xl font-bold mb-4 text-center">Hackathon Poles</h2>
-            
-            <h3 class="text-xl font-semibold mt-6">Pole 1: Mobile Network Architecture, Knowledge Extraction, and Modeling</h3>
-            <p class="mb-4 text-justify">
-                This pole focuses on the core structure and data dynamics of mobile networks, emphasizing mobility and traffic simulation models.
-                **Objectives** include enhancing simulation precision, extracting meaningful data, and developing new human mobility models or traffic patterns.
-            </p>
-
-            <h3 class="text-xl font-semibold mt-6">Pole 2: Mobile Network Data Privacy Protection through Anonymization</h3>
-            <p class="mb-4 text-justify">
-                Emphasizing data privacy, this pole introduces students to anonymization techniques like k-anonymity and differential privacy.
-                **Objectives** include protecting privacy in mobile network data, investigating pseudonymized datasets, and balancing privacy with data usability.
-            </p>
-
-            <h3 class="text-xl font-semibold mt-6">Pole 3: Offensive Security</h3>
-            <p class="mb-4 text-justify">
-                This pole focuses on offensive strategies to simulate fraud tactics in mobile networks.
-                **Objectives** include implementing realistic fraud models, evaluating cost-efficiency for fraudsters, and analyzing detection feasibility.
-            </p>
-
-            <h3 class="text-xl font-semibold mt-6">Pole 4: Defensive Security</h3>
-            <p class="mb-4 text-justify">
-                Focusing on detecting SIMBox fraud, this pole challenges students to develop AI-based detection techniques.
-                **Objectives** include proposing adaptable fraud detection methods, integrating meta-learners, and establishing effective evaluation metrics.
-            </p>
-        </div>
-
-        <div class="bg-white shadow-md rounded p-6 mb-8 w-full max-w-3xl">
-            <h2 class="text-2xl font-bold mb-4 text-center">Event Details</h2>
-            <ul class="list-disc list-inside mb-4">
-                <li><strong>Date</strong>: [Event Date]</li>
-                <li><strong>Location</strong>: [Event Location]</li>
-                <li><strong>Awards</strong>: Best projects in each category</li>
+    <!-- Pole Sections in Card Layout -->
+    <section class="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Pole 1 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-2">Mobile Network Architecture</h3>
+            <p class="text-sm text-gray-600 mb-4">Exploring network architecture and data dynamics to enhance mobility and traffic simulations.</p>
+            <strong>Objectives:</strong>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Integrate 4G/5G/6G features into FraudZen</li>
+                <li>Propose new mobility models within En-WDM</li>
             </ul>
         </div>
 
-        <div class="bg-white shadow-md rounded p-6 mb-8 w-full max-w-3xl" id="sponsors-section">
-            <h2 class="text-2xl font-bold mb-4 text-center">Sponsors</h2>
-            <p class="text-center mb-4">Our sponsors play a key role in supporting this event.</p>
-            <div class="flex justify-center space-x-4">
-                <img src="media/bua_logo.jpg" alt="Berlin University Alliance" class="h-20">
-                <img src="media/sponsor2-logo.png" alt="Sponsor 2 Logo" class="h-20">
-            </div>
+        <!-- Pole 2 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-2">Privacy Protection through Anonymization</h3>
+            <p class="text-sm text-gray-600 mb-4">Applying techniques to protect user identities in network data.</p>
+            <strong>Objectives:</strong>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Implement privacy techniques like k-anonymity</li>
+                <li>Analyze privacy attacks and vulnerabilities</li>
+            </ul>
         </div>
-    </main>
 
+        <!-- Pole 3 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-2">Offensive Security</h3>
+            <p class="text-sm text-gray-600 mb-4">Simulating fraud tactics to understand and combat SIMBox fraud.</p>
+            <strong>Objectives:</strong>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Implement fraud models for realistic behaviors</li>
+                <li>Validate cost-efficiency and effectiveness</li>
+            </ul>
+        </div>
+
+        <!-- Pole 4 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-2">Defensive Security</h3>
+            <p class="text-sm text-gray-600 mb-4">Developing advanced AI-based techniques for detecting SIMBox fraud.</p>
+            <strong>Objectives:</strong>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Propose novel AI-based detection solutions</li>
+                <li>Establish metrics for validating detection effectiveness</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="container mx-auto px-4 py-16 bg-gray-100">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Sponsors</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img src="media/sponsor1-logo.png" alt="Sponsor 1 Logo" class="h-20 mx-auto">
+            <img src="media/sponsor2-logo.png" alt="Sponsor 2 Logo" class="h-20 mx-auto">
+            <img src="media/sponsor3-logo.png" alt="Sponsor 3 Logo" class="h-20 mx-auto">
+            <img src="media/sponsor4-logo.png" alt="Sponsor 4 Logo" class="h-20 mx-auto">
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto px-4 flex justify-center items-center space-x-4">
-            <p>Contact us at: fraudzen@hackathon.org</p>
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 FraudZen Hackathon. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>

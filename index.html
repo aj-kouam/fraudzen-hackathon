@@ -9,13 +9,15 @@
 <body class="bg-gray-100 font-sans">
 
     <!-- Hero Section -->
-    <header class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('media/background_image.webp');">
-        <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded">
+    <header class="bg-cover bg-center h-screen flex items-center justify-center relative" style="background-image: url('media/background_image.webp');">
+        <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+        <div class="text-center text-white p-8 rounded relative z-10">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">FraudZen Hackathon</h1>
             <p class="text-xl mb-6">Advancing Mobile Network Security, Privacy, and Fraud Detection</p>
             <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Learn More</a>
         </div>
     </header>
+    
 
     <!-- About Section -->
     <section id="about" class="container mx-auto px-4 py-16">
@@ -73,6 +75,37 @@
                 <li>Propose novel AI-based detection solutions</li>
                 <li>Establish metrics for validating detection effectiveness</li>
             </ul>
+        </div>
+    </section>
+
+     <!-- Event Details Section -->
+     <section class="container mx-auto px-4 py-16 bg-gray-50">
+        <h2 class="text-3xl font-bold mb-6 text-center">Event Details</h2>
+        <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+            <h3 class="text-2xl font-bold mb-4">Event Venue</h3>
+            <p class="text-lg text-gray-700 mb-4">École Polytechnique - Université de Yaoundé I</p>
+            <p class="text-gray-600">Located at Pharmacie EMIA, Rte de Melen, Yaoundé, Cameroon.</p>
+            <div class="mt-4">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.8762081980433!2d9.70842511505205!3d3.8485354970571787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10625f2e13084e1b%3A0x4a4b4c6c14ae1b66!2s% C3%A9cole%20polytechnique%20-%20universit%C3%A9%20de%20Yaound%C3%A9%20I!5e0!3m2!1sen!2sfr!4v1634310989234!5m2!1sen!2sfr" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+        
+        <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+            <h3 class="text-2xl font-bold mb-4">Event Schedule</h3>
+            <p class="text-lg text-gray-700 mb-4">Schedule to be defined</p>
+        </div>
+
+        <!-- Organizer Information -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">Organizer Information</h3>
+            <p class="text-lg text-gray-700 mb-2">Contact: <a href="https://josiane-kouam.s-i-t-e.co/" class="text-blue-600 hover:underline">Anne Josiane Kouam</a></p>
+            <p class="text-lg text-gray-700">Email: <a href="mailto:kouam.djuigne@tu-berlin.de" class="text-blue-600 hover:underline">kouam.djuigne@tu-berlin.de</a></p>
         </div>
     </section>
     

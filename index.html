@@ -4,7 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FraudZen Hackathon</title>
+    <link rel="icon" href="media/favicon.webp" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+    /* Updated styles for the registration section */
+    #registration {
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        color: #ffffff; /* White text for contrast */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Stronger, darker shadow */
+        padding: 4rem 2rem;
+        border-radius: 8px; /* Slightly rounded corners */
+    }
+
+    #registration h2 {
+        color: #ffffff; /* Ensure title is white for visibility */
+    }
+
+    /* Green Button Styling */
+    #registration .bg-green-600 {
+        background-color: #28a745; /* Primary green color */
+        color: #ffffff; /* White text */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.209); /* Subtle button shadow */
+        padding: 0.75rem 2rem;
+    }
+
+    #registration .bg-green-600:hover {
+        background-color: #218838; /* Darker green on hover */
+    }
+    </style>
 </head>
 <body class="bg-gray-100 font-sans">
 
@@ -90,7 +118,7 @@
     </section>
     
     <!-- Registration Section -->
-    <section id="registration" class="container mx-auto px-4 py-16 bg-gray-50">
+    <section id="registration" class="container mx-auto px-4 py-16">
         <h2 class="text-3xl font-bold mb-6 text-center">Register for the Hackathon</h2>
         <p class="text-lg text-center mb-8">
             Register now to participate in the FraudZen Hackathon! Fill in your details to secure your spot.
@@ -98,11 +126,11 @@
         <div class="text-center">
             <a href="https://forms.gle/NXiojCM92nABirBw8" 
             target="_blank" 
-            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
+            class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded">
                 Register Here
             </a>
         </div>
-    </section>  
+    </section>    
 
      <!-- Event Details Section -->
      <section class="container mx-auto px-4 py-16 bg-gray-50">
